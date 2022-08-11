@@ -32,7 +32,7 @@ class ListMealFragment : BaseFragment() {
         with(binding) {
             masakViewModel.getMealByCategory(category!!).observe(viewLifecycleOwner) {
                 rvListmealMeal.apply {
-                    val adapterMeal = MealAdapter(it.meals, requireContext(), mainNavController)
+                    val adapterMeal = MealAdapter(it.meals, requireContext(), mainNavController, "beranda")
                     adapterMeal.notifyDataSetChanged()
                     adapter = adapterMeal
                     layoutManager =

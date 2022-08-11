@@ -15,11 +15,12 @@ import id.deval.masakapp.utils.Constanta
 class MealAdapter(
     private val listData: ArrayList<Meal>,
     private val context: Context,
-    private val navController: NavController
+    private val navController: NavController,
+    private val fromFragment : String
 ) : RecyclerView.Adapter<MealAdapter.MealViewHolder>() {
     class MealViewHolder(private val binding: RvMealsBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(data: Meal, context: Context, navController: NavController) {
+        fun bind(data: Meal, context: Context, navController: NavController, fromFragment: String) {
             with(binding) {
                 Glide.with(context)
                     .load(data.strMealThumb)
@@ -29,7 +30,10 @@ class MealAdapter(
                 clRvcategoryContainer.setOnClickListener {
                     val bundle = bundleOf()
                     bundle.putString(Constanta.ID, data.idMeal)
-                    navController.navigate(R.id.action_listMealFragment_to_detailMealFragment, bundle)
+                    when(fromFragment){
+                        "beranda" -> navController.navigate(R.id.action_listMealFragment_to_detailMealFragment, bundle)
+                        "search" -> navController.navigate(R.id.action_homeFragment_to_detailMealFragment, bundle)
+                    }
                 }
             }
         }
@@ -41,7 +45,7 @@ class MealAdapter(
     }
 
     override fun onBindViewHolder(holder: MealViewHolder, position: Int) {
-        holder.bind(listData[position], context, navController)
+        holder.bind(listData[position], context, navController, fromFragment)
     }
 
     override fun getItemCount(): Int {

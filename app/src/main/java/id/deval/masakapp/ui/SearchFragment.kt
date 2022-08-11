@@ -51,7 +51,7 @@ class SearchFragment : BaseFragment() {
         with(binding){
             masakViewModel.searchMealByName(p0).observe(viewLifecycleOwner) {
                 rvSearchMeal.apply {
-                    val adapter = MealAdapter(it.meals, requireContext(), mainNavController)
+                    val adapter = MealAdapter(it.meals, requireContext(), mainNavController, "search")
                     adapter.notifyDataSetChanged()
                     this.adapter = adapter
                     layoutManager =
