@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.DetailMealFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_detailmeal_containerimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_detailmeal_image"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blackt"
+                android:padding="@dimen/padding_layout"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtv_detailmeal_name"
+                    style="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Daging Ikan"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/padding_layout"
+            android:paddingVertical="@dimen/padding_layout"
+            app:layout_constraintTop_toBottomOf="@id/cl_detailmeal_containerimage">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_titleCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/gray3"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Category"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="@id/mtv_detailmeal_titleCategory" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_titleCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Country"
+                android:textColor="@color/gray3"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/mtv_detailmeal_titleCategory"
+                app:layout_constraintTop_toBottomOf="@id/mtv_detailmeal_titleCategory" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_country"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Category"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="@id/mtv_detailmeal_titleCountry" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_titleTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Tag"
+                android:textColor="@color/gray3"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/mtv_detailmeal_titleCategory"
+                app:layout_constraintTop_toBottomOf="@id/mtv_detailmeal_titleCountry" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Category"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="@id/mtv_detailmeal_titleTag" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_titleyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Youtube"
+                android:textColor="@color/gray3"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/mtv_detailmeal_titleCategory"
+                app:layout_constraintTop_toBottomOf="@id/mtv_detailmeal_titleTag" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_yt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="Category"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="@id/mtv_detailmeal_titleyt" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_titleInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Instructions"
+                android:textColor="@color/gray3"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/mtv_detailmeal_titleCategory"
+                app:layout_constraintTop_toBottomOf="@id/mtv_detailmeal_yt" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_detailmeal_instruction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/mtv_detailmeal_titleInstruction"
+                app:layout_constraintTop_toBottomOf="@id/mtv_detailmeal_titleInstruction" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_detailmeal_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@id/mtv_detailmeal_instruction" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
