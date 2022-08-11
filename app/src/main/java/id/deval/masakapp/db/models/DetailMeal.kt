@@ -56,40 +56,40 @@ data class DetailMeal(
     val strInstructions: String? = null,
 
     @field:SerializedName("strIngredient1")
-    val strIngredient1: String? = null,
+    val strIngredient1: String? = "",
 
     @field:SerializedName("strIngredient3")
-    val strIngredient3: String? = null,
+    val strIngredient3: String? = "",
 
     @field:SerializedName("strIngredient2")
-    val strIngredient2: String? = null,
+    val strIngredient2: String? = "",
 
     @field:SerializedName("strIngredient20")
-    val strIngredient20: String? = null,
+    val strIngredient20: String? = "",
 
     @field:SerializedName("strIngredient5")
-    val strIngredient5: String? = null,
+    val strIngredient5: String? = "",
 
     @field:SerializedName("strIngredient4")
-    val strIngredient4: String? = null,
+    val strIngredient4: String? = "",
 
     @field:SerializedName("strIngredient7")
-    val strIngredient7: String? = null,
+    val strIngredient7: String? = "",
 
     @field:SerializedName("strIngredient6")
-    val strIngredient6: String? = null,
+    val strIngredient6: String? = "",
 
     @field:SerializedName("strIngredient9")
-    val strIngredient9: String? = null,
+    val strIngredient9: String? = "",
 
     @field:SerializedName("strIngredient8")
-    val strIngredient8: String? = null,
+    val strIngredient8: String? = "",
 
     @field:SerializedName("strMealThumb")
-    val strMealThumb: String? = null,
+    val strMealThumb: String? = "",
 
     @field:SerializedName("strMeasure20")
-    val strMeasure20: String? = null,
+    val strMeasure20: String? = "",
 
     @field:SerializedName("strYoutube")
     val strYoutube: String? = null,
@@ -98,16 +98,16 @@ data class DetailMeal(
     val strMeal: String? = null,
 
     @field:SerializedName("strMeasure12")
-    val strMeasure12: String? = null,
+    val strMeasure12: String? = "",
 
     @field:SerializedName("strMeasure13")
-    val strMeasure13: String? = null,
+    val strMeasure13: String? = "",
 
     @field:SerializedName("strMeasure10")
-    val strMeasure10: String? = null,
+    val strMeasure10: String? = "",
 
     @field:SerializedName("strMeasure11")
-    val strMeasure11: String? = null,
+    val strMeasure11: String? = "",
 
     @field:SerializedName("dateModified")
     val dateModified: String? = null,
@@ -119,47 +119,47 @@ data class DetailMeal(
     val strSource: String? = null,
 
     @field:SerializedName("strMeasure9")
-    val strMeasure9: String? = null,
+    val strMeasure9: String? = "",
 
     @field:SerializedName("strMeasure7")
-    val strMeasure7: String? = null,
+    val strMeasure7: String? = "",
 
     @field:SerializedName("strMeasure8")
-    val strMeasure8: String? = null,
+    val strMeasure8: String? = "",
 
     @field:SerializedName("strMeasure5")
-    val strMeasure5: String? = null,
+    val strMeasure5: String? = "",
 
     @field:SerializedName("strMeasure6")
-    val strMeasure6: String? = null,
+    val strMeasure6: String? = "",
 
     @field:SerializedName("strMeasure3")
-    val strMeasure3: String? = null,
+    val strMeasure3: String? = "",
 
     @field:SerializedName("strMeasure4")
-    val strMeasure4: String? = null,
+    val strMeasure4: String? = "",
 
     @field:SerializedName("strMeasure1")
-    val strMeasure1: String? = null,
+    val strMeasure1: String? = "",
 
     @field:SerializedName("strMeasure18")
-    val strMeasure18: String? = null,
+    val strMeasure18: String? = "",
 
     @field:SerializedName("strMeasure2")
-    val strMeasure2: String? = null,
+    val strMeasure2: String? = "",
 
     @field:SerializedName("strMeasure19")
-    val strMeasure19: String? = null,
+    val strMeasure19: String? = "",
 
     @field:SerializedName("strMeasure16")
-    val strMeasure16: String? = null,
+    val strMeasure16: String? = "",
 
     @field:SerializedName("strMeasure17")
-    val strMeasure17: String? = null,
+    val strMeasure17: String? = "",
 
     @field:SerializedName("strMeasure14")
-    val strMeasure14: String? = null,
+    val strMeasure14: String? = "",
 
     @field:SerializedName("strMeasure15")
-    val strMeasure15: String? = null
+    val strMeasure15: String? = ""
 )
